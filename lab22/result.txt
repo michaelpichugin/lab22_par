@@ -1643,3 +1643,396 @@ TestMulArr_Par2			46112.6 ms.
 TestMulArr_Single_Fast			30134.1 ms.
 TestMulArr_Par_Fast			60707.7 ms.
 
+|||||-«‡ÏÂ˚ ‚ÂÏÂÌË Ì‡˜‡Ú˚: Tue Nov  2 08:21:52 2021-|||||
+		œŒ“Œ Œ¬: 1
+
+	Ã¿“–»÷€: 100 x 100
+
+TestFillArr_Single			153.143 ms.
+TestFillArr_Par			298.231 ms.
+TestMulArr_Single			534.586 ms.
+TestMulArr_Par1			1549.1 ms.
+TestMulArr_Par2			3016.35 ms.
+TestMulArr_Single_Fast			628.42 ms.
+TestMulArr_Par_Fast			3167.77 ms.
+
+	Ã¿“–»÷€: 200 x 200
+
+TestFillArr_Single			606.982 ms.
+TestFillArr_Par			1127.2 ms.
+TestMulArr_Single			5019.33 ms.
+TestMulArr_Par1			10427.6 ms.
+TestMulArr_Par2			23873.6 ms.
+TestMulArr_Single_Fast			5474.11 ms.
+TestMulArr_Par_Fast			24788.8 ms.
+
+	Ã¿“–»÷€: 300 x 300
+
+TestFillArr_Single			1429.26 ms.
+TestFillArr_Par			2663.88 ms.
+TestMulArr_Single			19124.7 ms.
+TestMulArr_Par1			33044.2 ms.
+TestMulArr_Par2			75437.6 ms.
+TestMulArr_Single_Fast			18701.2 ms.
+TestMulArr_Par_Fast			18972.2 ms.
+
+	Ã¿“–»÷€: 400 x 400
+
+TestFillArr_Single			2440.06 ms.
+TestFillArr_Par			4464.43 ms.
+TestMulArr_Single			43852.6 ms.
+TestMulArr_Par1			76284.6 ms.
+TestMulArr_Par2			175699 ms.
+TestMulArr_Single_Fast			33847.1 ms.
+TestMulArr_Par_Fast			162911 ms.
+
+		œŒ“Œ Œ¬: 2
+
+	Ã¿“–»÷€: 100 x 100
+
+TestFillArr_Single			183.4 ms.
+TestFillArr_Par			226.316 ms.
+TestMulArr_Single			543.044 ms.
+TestMulArr_Par1			774.414 ms.
+TestMulArr_Par2			1503.58 ms.
+TestMulArr_Single_Fast			518.207 ms.
+TestMulArr_Par_Fast			1585.74 ms.
+
+	Ã¿“–»÷€: 200 x 200
+
+TestFillArr_Single			597.075 ms.
+TestFillArr_Par			575.455 ms.
+TestMulArr_Single			5130.32 ms.
+TestMulArr_Par1			5126.51 ms.
+TestMulArr_Par2			11491.8 ms.
+TestMulArr_Single_Fast			4012.8 ms.
+TestMulArr_Par_Fast			11976.1 ms.
+
+	Ã¿“–»÷€: 300 x 300
+
+TestFillArr_Single			1381.29 ms.
+TestFillArr_Par			1262.88 ms.
+TestMulArr_Single			18046.5 ms.
+TestMulArr_Par1			17286.6 ms.
+TestMulArr_Par2			38091.9 ms.
+TestMulArr_Single_Fast			15683.5 ms.
+TestMulArr_Par_Fast			15812.7 ms.
+
+	Ã¿“–»÷€: 400 x 400
+
+TestFillArr_Single			2460.66 ms.
+TestFillArr_Par			2265.39 ms.
+TestMulArr_Single			44008.9 ms.
+TestMulArr_Par1			40592.4 ms.
+TestMulArr_Par2			89096.8 ms.
+TestMulArr_Single_Fast			32257.7 ms.
+TestMulArr_Par_Fast			89240.8 ms.
+
+		œŒ“Œ Œ¬: 3
+
+	Ã¿“–»÷€: 100 x 100
+
+TestFillArr_Single			155.958 ms.
+TestFillArr_Par			207.094 ms.
+TestMulArr_Single			550.927 ms.
+TestMulArr_Par1			607.057 ms.
+TestMulArr_Par2			1047.86 ms.
+TestMulArr_Single_Fast			525.207 ms.
+TestMulArr_Par_Fast			1279.71 ms.
+
+	Ã¿“–»÷€: 200 x 200
+
+TestFillArr_Single			735.179 ms.
+TestFillArr_Par			384.671 ms.
+TestMulArr_Single			5336.56 ms.
+TestMulArr_Par1			3629.2 ms.
+TestMulArr_Par2			7996.43 ms.
+TestMulArr_Single_Fast			4301.13 ms.
+TestMulArr_Par_Fast			9310.69 ms.
+
+	Ã¿“–»÷€: 300 x 300
+
+TestFillArr_Single			1484.15 ms.
+TestFillArr_Par			964.592 ms.
+TestMulArr_Single			18173.3 ms.
+TestMulArr_Par1			12470.9 ms.
+TestMulArr_Par2			25870.6 ms.
+TestMulArr_Single_Fast			14719.6 ms.
+TestMulArr_Par_Fast			15440.8 ms.
+
+	Ã¿“–»÷€: 400 x 400
+
+TestFillArr_Single			2761.03 ms.
+TestFillArr_Par			1609.39 ms.
+TestMulArr_Single			44271.4 ms.
+TestMulArr_Par1			30052.3 ms.
+TestMulArr_Par2			60816.6 ms.
+TestMulArr_Single_Fast			31541.7 ms.
+TestMulArr_Par_Fast			68183 ms.
+
+		œŒ“Œ Œ¬: 4
+
+	Ã¿“–»÷€: 100 x 100
+
+TestFillArr_Single			243.45 ms.
+TestFillArr_Par			105.379 ms.
+TestMulArr_Single			560.018 ms.
+TestMulArr_Par1			601.44 ms.
+TestMulArr_Par2			846.763 ms.
+TestMulArr_Single_Fast			627.371 ms.
+TestMulArr_Par_Fast			1071.21 ms.
+
+	Ã¿“–»÷€: 200 x 200
+
+TestFillArr_Single			611.006 ms.
+TestFillArr_Par			440.832 ms.
+TestMulArr_Single			5369.92 ms.
+TestMulArr_Par1			3403.96 ms.
+TestMulArr_Par2			6048.53 ms.
+TestMulArr_Single_Fast			4311.6 ms.
+TestMulArr_Par_Fast			7977.39 ms.
+
+	Ã¿“–»÷€: 300 x 300
+
+TestFillArr_Single			1577.49 ms.
+TestFillArr_Par			1006.04 ms.
+TestMulArr_Single			18152.2 ms.
+TestMulArr_Par1			11128.3 ms.
+TestMulArr_Par2			19806.5 ms.
+TestMulArr_Single_Fast			14741.7 ms.
+TestMulArr_Par_Fast			16521.5 ms.
+
+	Ã¿“–»÷€: 400 x 400
+
+TestFillArr_Single			2677.81 ms.
+TestFillArr_Par			1756.98 ms.
+TestMulArr_Single			43980.5 ms.
+TestMulArr_Par1			25594.7 ms.
+TestMulArr_Par2			45929.3 ms.
+TestMulArr_Single_Fast			31684.8 ms.
+TestMulArr_Par_Fast			59496.9 ms.
+
+|||||-«‡ÏÂ˚ ‚ÂÏÂÌË Ì‡˜‡Ú˚: Tue Nov  2 09:04:06 2021-|||||
+		œŒ“Œ Œ¬: 1
+
+	Ã¿“–»÷€: 400 x 400
+
+TestFillArr_Single			2760.29 ms.
+TestFillArr_Par			4507.51 ms.
+TestMulArr_Single			45735.2 ms.
+TestMulArr_Par1			76186.6 ms.
+TestMulArr_Par2			176025 ms.
+TestMulArr_Single_Fast			38527.3 ms.
+TestMulArr_Par_Fast			166508 ms.
+
+	Ã¿“–»÷€: 700 x 700
+
+|||||-«‡ÏÂ˚ ‚ÂÏÂÌË Ì‡˜‡Ú˚: Tue Nov  2 09:04:06 2021-|||||
+		œŒ“Œ Œ¬: 1
+
+	Ã¿“–»÷€: 400 x 400
+
+TestFillArr_Single			2520.18 ms.
+TestFillArr_Par			4738.31 ms.
+TestMulArr_Single			46605.7 ms.
+TestMulArr_Par1			80435 ms.
+TestMulArr_Par2			176773 ms.
+TestMulArr_Single_Fast			37327.4 ms.
+TestMulArr_Par_Fast			166273 ms.
+
+	Ã¿“–»÷€: 700 x 700
+
+|||||-«‡ÏÂ˚ ‚ÂÏÂÌË Ì‡˜‡Ú˚: Tue Nov  2 09:08:59 2021-|||||
+		œŒ“Œ Œ¬: 1
+
+	Ã¿“–»÷€: 400 x 400
+
+TestFillArr_Single			2867.16 ms.
+TestFillArr_Par			4627.9 ms.
+TestMulArr_Single			45886.1 ms.
+TestMulArr_Par1			77593.1 ms.
+TestMulArr_Par2			176166 ms.
+TestMulArr_Single_Fast			37077.3 ms.
+TestMulArr_Par_Fast			165903 ms.
+
+	Ã¿“–»÷€: 700 x 700
+
+TestFillArr_Single			7553.7 ms.
+TestFillArr_Par			13958.8 ms.
+TestMulArr_Single			242352 ms.
+TestMulArr_Par1			399594 ms.
+TestMulArr_Par2			930491 ms.
+TestMulArr_Single_Fast			168791 ms.
+TestMulArr_Par_Fast			171202 ms.
+
+	Ã¿“–»÷€: 1000 x 1000
+
+|||||-«‡ÏÂ˚ ‚ÂÏÂÌË Ì‡˜‡Ú˚: Tue Nov  2 09:10:53 2021-|||||
+		œŒ“Œ Œ¬: 1
+
+	Ã¿“–»÷€: 400 x 400
+
+TestFillArr_Single			2744.37 ms.
+TestFillArr_Par			4681.35 ms.
+TestMulArr_Single			47263.5 ms.
+TestMulArr_Par1			81883.2 ms.
+TestMulArr_Par2			176898 ms.
+TestMulArr_Single_Fast			36882 ms.
+TestMulArr_Par_Fast			165617 ms.
+
+	Ã¿“–»÷€: 700 x 700
+
+TestFillArr_Single			7552.8 ms.
+TestFillArr_Par			13857 ms.
+TestMulArr_Single			251893 ms.
+TestMulArr_Par1			398961 ms.
+TestMulArr_Par2			935578 ms.
+TestMulArr_Single_Fast			171860 ms.
+TestMulArr_Par_Fast			172629 ms.
+
+	Ã¿“–»÷€: 1000 x 1000
+
+TestFillArr_Single			15127.9 ms.
+TestFillArr_Par			28295 ms.
+TestMulArr_Single			735613 ms.
+TestMulArr_Par1			1.18718e+06 ms.
+TestMulArr_Par2			2.74412e+06 ms.
+TestMulArr_Single_Fast			471058 ms.
+TestMulArr_Par_Fast			433938 ms.
+
+	Ã¿“–»÷€: 1300 x 1300
+
+TestFillArr_Single			25666.5 ms.
+TestFillArr_Par			47627.1 ms.
+TestMulArr_Single			1.76454e+06 ms.
+TestMulArr_Par1			2.74177e+06 ms.
+TestMulArr_Par2			6.02921e+06 ms.
+TestMulArr_Single_Fast			940378 ms.
+TestMulArr_Par_Fast			944414 ms.
+
+		œŒ“Œ Œ¬: 2
+
+	Ã¿“–»÷€: 400 x 400
+
+TestFillArr_Single			2400.85 ms.
+TestFillArr_Par			2287.48 ms.
+TestMulArr_Single			44075 ms.
+TestMulArr_Par1			41258.4 ms.
+TestMulArr_Par2			88339.4 ms.
+TestMulArr_Single_Fast			32292.6 ms.
+TestMulArr_Par_Fast			86589.3 ms.
+
+	Ã¿“–»÷€: 700 x 700
+
+TestFillArr_Single			7663.85 ms.
+TestFillArr_Par			7061.91 ms.
+TestMulArr_Single			242250 ms.
+TestMulArr_Par1			214819 ms.
+TestMulArr_Par2			467792 ms.
+TestMulArr_Single_Fast			157002 ms.
+TestMulArr_Par_Fast			159407 ms.
+
+	Ã¿“–»÷€: 1000 x 1000
+
+TestFillArr_Single			15238.2 ms.
+TestFillArr_Par			14863.1 ms.
+TestMulArr_Single			726321 ms.
+TestMulArr_Par1			615021 ms.
+TestMulArr_Par2			1.35661e+06 ms.
+TestMulArr_Single_Fast			424781 ms.
+TestMulArr_Par_Fast			426649 ms.
+
+	Ã¿“–»÷€: 1300 x 1300
+
+TestFillArr_Single			25864.9 ms.
+TestFillArr_Par			24477 ms.
+TestMulArr_Single			1.74608e+06 ms.
+TestMulArr_Par1			1.4041e+06 ms.
+TestMulArr_Par2			3.00266e+06 ms.
+TestMulArr_Single_Fast			932350 ms.
+TestMulArr_Par_Fast			940345 ms.
+
+		œŒ“Œ Œ¬: 3
+
+	Ã¿“–»÷€: 400 x 400
+
+TestFillArr_Single			2506.54 ms.
+TestFillArr_Par			1673.95 ms.
+TestMulArr_Single			44084.2 ms.
+TestMulArr_Par1			30172.5 ms.
+TestMulArr_Par2			60672.2 ms.
+TestMulArr_Single_Fast			31838.6 ms.
+TestMulArr_Par_Fast			66746.9 ms.
+
+	Ã¿“–»÷€: 700 x 700
+
+TestFillArr_Single			7803.5 ms.
+TestFillArr_Par			4943.13 ms.
+TestMulArr_Single			242206 ms.
+TestMulArr_Par1			154273 ms.
+TestMulArr_Par2			316878 ms.
+TestMulArr_Single_Fast			157563 ms.
+TestMulArr_Par_Fast			162507 ms.
+
+	Ã¿“–»÷€: 1000 x 1000
+
+TestFillArr_Single			15504.5 ms.
+TestFillArr_Par			10322.4 ms.
+TestMulArr_Single			725993 ms.
+TestMulArr_Par1			456272 ms.
+TestMulArr_Par2			917873 ms.
+TestMulArr_Single_Fast			418211 ms.
+TestMulArr_Par_Fast			426935 ms.
+
+	Ã¿“–»÷€: 1300 x 1300
+
+TestFillArr_Single			25800.4 ms.
+TestFillArr_Par			17934.9 ms.
+TestMulArr_Single			1.74337e+06 ms.
+TestMulArr_Par1			1.0394e+06 ms.
+TestMulArr_Par2			2.02014e+06 ms.
+TestMulArr_Single_Fast			931775 ms.
+TestMulArr_Par_Fast			931788 ms.
+
+		œŒ“Œ Œ¬: 4
+
+	Ã¿“–»÷€: 400 x 400
+
+TestFillArr_Single			2494.77 ms.
+TestFillArr_Par			1256.5 ms.
+TestMulArr_Single			44089.5 ms.
+TestMulArr_Par1			24584.1 ms.
+TestMulArr_Par2			45889.5 ms.
+TestMulArr_Single_Fast			32520.5 ms.
+TestMulArr_Par_Fast			58505.4 ms.
+
+	Ã¿“–»÷€: 700 x 700
+
+TestFillArr_Single			7797.63 ms.
+TestFillArr_Par			3868.67 ms.
+TestMulArr_Single			241844 ms.
+TestMulArr_Par1			132742 ms.
+TestMulArr_Par2			240866 ms.
+TestMulArr_Single_Fast			158439 ms.
+TestMulArr_Par_Fast			166320 ms.
+
+	Ã¿“–»÷€: 1000 x 1000
+
+TestFillArr_Single			15290.6 ms.
+TestFillArr_Par			8949.85 ms.
+TestMulArr_Single			725089 ms.
+TestMulArr_Par1			375943 ms.
+TestMulArr_Par2			697333 ms.
+TestMulArr_Single_Fast			418720 ms.
+TestMulArr_Par_Fast			427562 ms.
+
+	Ã¿“–»÷€: 1300 x 1300
+
+TestFillArr_Single			25556.4 ms.
+TestFillArr_Par			14569.5 ms.
+TestMulArr_Single			1.74784e+06 ms.
+TestMulArr_Par1			854518 ms.
+TestMulArr_Par2			1.53345e+06 ms.
+TestMulArr_Single_Fast			929901 ms.
+TestMulArr_Par_Fast			941934 ms.
+

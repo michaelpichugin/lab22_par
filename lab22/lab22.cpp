@@ -128,6 +128,7 @@ double MulArr_Single(double** A, double** B, double** C, int M, int N, int K)
 	double time_stop = omp_get_wtime();
 	return (time_stop - time_start) * 1000;
 }
+//оптимизация путем хранения в локальной переменной элементов столбца
 double MulArr_Par1(double** A, double** B, double** C, int M, int N, int K)
 {
 	double time_start = omp_get_wtime();
@@ -152,6 +153,7 @@ double MulArr_Par1(double** A, double** B, double** C, int M, int N, int K)
 	double time_stop = omp_get_wtime();
 	return (time_stop - time_start) * 1000;
 }
+//использует механизма группировки данных в памяти путем транспонирования и локальную переменную
 double MulArr_Par2(double** A, double** B, double** C, int M, int N, int K)
 {
 	double time_start = omp_get_wtime();
@@ -190,7 +192,8 @@ double MulArr_Par2(double** A, double** B, double** C, int M, int N, int K)
 	return (time_stop - time_start) * 1000;
 }
 
-// Всё для штрассена
+// Всё для Штрассена
+// сумма
 int ADD(double**& MatrixA, double**& MatrixB, double**& MatrixResult, int MatrixSize)
 {
 	for (int i = 0; i < MatrixSize; i++)
@@ -202,7 +205,7 @@ int ADD(double**& MatrixA, double**& MatrixB, double**& MatrixResult, int Matrix
 	}
 	return 0;
 }
-
+// разность
 int SUB(double**& MatrixA, double**& MatrixB, double**& MatrixResult, int MatrixSize)
 {
 	for (int i = 0; i < MatrixSize; i++)
@@ -214,7 +217,7 @@ int SUB(double**& MatrixA, double**& MatrixB, double**& MatrixResult, int Matrix
 	}
 	return 0;
 }
-
+// умножение матриц
 int MUL(double** MatrixA, double** MatrixB, double** MatrixResult, int MatrixSize)
 {
 	double** mtr = new double* [MatrixSize];
@@ -614,53 +617,53 @@ int StrassenPar(double** MatrixA, double** MatrixB, double** MatrixC, int Matrix
 		}
 
 		//P1 == M1[][]
-		ADDPar(A11, A22, AResult, HalfSize);
-		ADDPar(B11, B22, BResult, HalfSize);
+		ADD(A11, A22, AResult, HalfSize);
+		ADD(B11, B22, BResult, HalfSize);
 		StrassenPar(AResult, BResult, M1, HalfSize, linearMultBlockSize);
 
 
 		//P2 == M2[][]
-		ADDPar(A21, A22, AResult, HalfSize);              //M2=(A21+A22)B11
+		ADD(A21, A22, AResult, HalfSize);              //M2=(A21+A22)B11
 		StrassenPar(AResult, B11, M2, HalfSize, linearMultBlockSize);       //Mul(AResult,B11,M2);
 
 		//P3 == M3[][]
-		SUBPar(B12, B22, BResult, HalfSize);              //M3=A11(B12-B22)
+		SUB(B12, B22, BResult, HalfSize);              //M3=A11(B12-B22)
 		StrassenPar(A11, BResult, M3, HalfSize, linearMultBlockSize);       //Mul(A11,BResult,M3);
 
 		//P4 == M4[][]
-		SUBPar(B21, B11, BResult, HalfSize);           //M4=A22(B21-B11)
+		SUB(B21, B11, BResult, HalfSize);           //M4=A22(B21-B11)
 		StrassenPar(A22, BResult, M4, HalfSize, linearMultBlockSize);       //Mul(A22,BResult,M4);
 
 		//P5 == M5[][]
-		ADDPar(A11, A12, AResult, HalfSize);           //M5=(A11+A12)B22
+		ADD(A11, A12, AResult, HalfSize);           //M5=(A11+A12)B22
 		StrassenPar(AResult, B22, M5, HalfSize, linearMultBlockSize);       //Mul(AResult,B22,M5);
 
 
 		//P6 == M6[][]
-		SUBPar(A21, A11, AResult, HalfSize);
-		ADDPar(B11, B12, BResult, HalfSize);             //M6=(A21-A11)(B11+B12)
+		SUB(A21, A11, AResult, HalfSize);
+		ADD(B11, B12, BResult, HalfSize);             //M6=(A21-A11)(B11+B12)
 		StrassenPar(AResult, BResult, M6, HalfSize, linearMultBlockSize);    //Mul(AResult,BResult,M6);
 
 		//P7 == M7[][]
-		SUBPar(A12, A22, AResult, HalfSize);
-		ADDPar(B21, B22, BResult, HalfSize);             //M7=(A12-A22)(B21+B22)
+		SUB(A12, A22, AResult, HalfSize);
+		ADD(B21, B22, BResult, HalfSize);             //M7=(A12-A22)(B21+B22)
 		StrassenPar(AResult, BResult, M7, HalfSize, linearMultBlockSize);     //Mul(AResult,BResult,M7);
 
 		//C11 = M1 + M4 - M5 + M7;
-		ADDPar(M1, M4, AResult, HalfSize);
-		SUBPar(M7, M5, BResult, HalfSize);
-		ADDPar(AResult, BResult, C11, HalfSize);
+		ADD(M1, M4, AResult, HalfSize);
+		SUB(M7, M5, BResult, HalfSize);
+		ADD(AResult, BResult, C11, HalfSize);
 
 		//C12 = M3 + M5;
-		ADDPar(M3, M5, C12, HalfSize);
+		ADD(M3, M5, C12, HalfSize);
 
 		//C21 = M2 + M4;
-		ADDPar(M2, M4, C21, HalfSize);
+		ADD(M2, M4, C21, HalfSize);
 
 		//C22 = M1 + M3 - M2 + M6;
-		ADDPar(M1, M3, AResult, HalfSize);
-		SUBPar(M6, M2, BResult, HalfSize);
-		ADDPar(AResult, BResult, C22, HalfSize);
+		ADD(M1, M3, AResult, HalfSize);
+		SUB(M6, M2, BResult, HalfSize);
+		ADD(AResult, BResult, C22, HalfSize);
 
 
 		// Сбор частей в единую матрицу
@@ -921,10 +924,12 @@ double MulArr_Par_Fast(double** A, double** B, double** C, int sizeA, int sizeB,
 
 double TestIter(void* Funct, int iterations, double** A, double** B, double** C, int M, int N, int K, int linearMultBlockSize)
 {
+	
 	double curtime = 0, avgTime = 0, avgTimeT = 0, correctAVG = 0;;
 	double* Times = new double[iterations];
 	for (int i = 0; i < iterations; i++)
 	{
+		std::cout << "*";
 		// Запуск функции и получение времени в миллисекундах
 		curtime = ((*(TestFunctTempl)Funct)(A, B, C, M, N, K, linearMultBlockSize)) * 1000;
 		// запись времени в массив для определения среднеарифметического значения в доверительном интервале
@@ -965,7 +970,10 @@ void test_functions(void** Functions, std::string(&function_names)[7], int itera
 	double Functions_time_ms[7];
 	// проведение замеров времени работы по каждой функции
 	for (int i = 0; i < 7; i++)
+	{
 		Functions_time_ms[i] = TestIter(Functions[i], iterations, A, B, C, M, N, K, linearMultBlockSize);
+		std::cout << std::endl;
+	}
 
 	std::ofstream out;          // поток для записи
 	out.open("result.txt", std::ios::app); // окрываем файл для записи
@@ -1009,7 +1017,7 @@ int main()
 		std::cout << "\t\tПОТОКОВ: " << i << std::endl;
 		omp_set_num_threads(i);
 
-		for (long j = 100; j < 500; j += 100)
+		for (long j = 400; j < 1600; j += 300)
 		{
 			out.open("result.txt", std::ios::app);
 			if (out.is_open())
@@ -1041,7 +1049,7 @@ int main()
 				//выделение памяти для каждого элемента
 				//c[i], c[i] адресует L элементов типа double
 				C[i] = new double[sizeC];
-
+			std::cout << "Набор данных:" << j << std::endl;
 			test_functions(Functions, function_names, 20, A, B, C, sizeA, sizeB, sizeC, 64);
 
 			for (int i = 0; i < sizeA; i++)
